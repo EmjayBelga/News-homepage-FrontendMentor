@@ -4,4 +4,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 
 ### Screenshot
-![news homepage screenshot](./assets/homepage-sc.png)
+![news homepage screenshot](../assets/homepage-sc.png)
+
+
+### Links
+- Live Site URL: https://newshomepage-solution.netlify.app/
