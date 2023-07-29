@@ -1,0 +1,132 @@
+.hero__title{
+    color: var(--clr-very-dark-blue);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-block: 1.5rem;
+}
+.hero__description{
+    color: var(--clr-dark-grayish-blue);
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.hero__btn{
+    background-color: var(--clr-soft-red);
+    color: var(--clr-off-white);
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero__btn:hover{
+    background-color: var(--clr-very-dark-blue);
+    transition: 0.3s;
+}
+
+/* NEW SECTION */
+.new{
+    background-color: var(--clr-very-dark-blue);
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
+.new__title{
+    color: var(--clr-soft-orange);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.article__title{
+    color: var(--clr-off-white);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.article__description{
+    color: var(--clr-grayish-blue)
+}
+.article__link:hover .article__title{
+    color: var(--clr-soft-orange);
+    transition: 0.3s;
+}
+hr{
+    margin-block: 1.5rem;
+    border: 1px solid var(--clr-dark-grayish-blue);
+}
+.article:last-child hr{
+    display: none;
+}
+
+
+@media(min-width: 768px){
+    .hero__wrapper{
+        display: grid;
+        column-gap: 1rem;
+        grid-template-areas: 
+        'hero-img hero-img hero-img new'
+        'hero-img hero-img hero-img new'
+        'title title title new';
+    }
+    .hero{
+        grid-area: hero-img;
+    }
+    .hero__title-wrapper{
+        grid-area: title;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .hero__title{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .hero__description,
+    .hero__btn{
+        max-width: 70ch;
+        font-size: 0.8rem;
+    }
+    
+    .new{
+        grid-area: new;
+        padding: 1rem;
+        margin-top: 0;
+    }
+    .article__title{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .article__description{
+        font-size: 0.8rem;
+    }
+    hr{
+        margin-block: 0.5rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .hero__title-wrapper{
+        margin-top: 1rem;  
+    }
+    .hero__description{
+        font-size: 1rem;
+    }
+
+    .new{
+        padding: 1.5rem;
+    }
+    .article__title{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .article__description{
+        font-size: 1rem;
+    }
+    hr{
+        margin-block: 1.5rem;
+    }
+}
+
+@media(min-width: 1440px){
+    .article__title{
+        margin-bottom: 1rem;
+    }
+    hr{
+        margin-block: 2rem;
+    }
+}
